@@ -1,7 +1,8 @@
 'use client'
 import React from "react";
 import "./Sidebar.css";
-import { useParams, useRouter } from 'next/navigation';
+import Link from "next/link";
+
 const Sidebar = () => {
   return (
     <div className="sidebar">
@@ -9,24 +10,29 @@ const Sidebar = () => {
       </div>
       <ul className="sidebar-menu">
         <li>
-          <a href="/major" className='active'>
+          <Link href="/major" className='active'>
             <i className="fas fa-home"></i> Ngành
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/student">
+          <Link href="/student">
             <i className="fas fa-user-graduate"></i> Hồ Sơ Thí Sinh
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/result">
+          <Link href="/result">
             <i className="fas fa-book"></i> Kết Quả Tuyển sinh
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/announce">
+          <Link href="/account">
+            <i className="fas fa-book"></i> Tài Khoản
+          </Link>
+        </li>
+        <li>
+          <Link href="/announce">
             <i className="fas fa-envelope"></i> Thông Báo
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

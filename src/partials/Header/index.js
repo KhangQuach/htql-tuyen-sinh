@@ -43,33 +43,6 @@ function Header() {
           </Link>
         </div>
 
-        <div style={{
-          width: "70%"
-        }}>
-          <ul style={{
-            display: "flex",
-            gap: "30px",
-            listStyleType: "none",
-            justifyContent: "start"
-          }}>
-            <li>
-              <Link href="/major">Ngành</Link>
-            </li>
-            <li>
-              <Link href="/student">Hồ Sơ Thí Sinh</Link>
-            </li>
-            <li>
-              <Link href="/result">Kết Quả Tuyển Sinh</Link>
-            </li>
-            <li>
-              <Link href="/account">Tài Khoản</Link>
-            </li>
-            <li>
-              <Link href="/announce">Thông Báo</Link>
-            </li>
-          </ul>
-        </div>
-
         <div className="auth" style={{
           width: "15%",
           display: "flex",
