@@ -31,7 +31,7 @@ function Header() {
             gap: "10px",
           }}>
             <img
-              src="https://th.bing.com/th/id/R.d91e958e97159535b665ed4a04e0594b?rik=iJSI%2bA1Pk3tkZg&riu=http%3a%2f%2fqlcvcet.ctu.edu.vn%2fimg%2flogo_ctu.png&ehk=qB4IoQilsFbB3xOUo6GV4BTHvJWCbynz%2b8EfuT06V2A%3d&risl=&pid=ImgRaw&r=0"
+              src="https://www.ctu.edu.vn/images/branding/logo/CTU_logo.png"
               alt="Logo"
               style={{
                 width: "50px",
