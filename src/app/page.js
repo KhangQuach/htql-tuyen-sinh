@@ -1,5 +1,5 @@
-import Image from "next/image";
 
+import 'bootstrap-icons/font/bootstrap-icons.css';
 export default function Home() {
   return (
     <>

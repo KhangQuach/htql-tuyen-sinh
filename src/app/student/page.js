@@ -10,9 +10,36 @@ import {
 } from "@/components/ui/table";
 import { Input } from "@/components/ui/input";
 import Actions from "@/components/Actions/actions";
-
+import { IoSearchSharp } from "react-icons/io5";
 const invoices = [
   {
+    tenThiSinh: "Quách Thiếu Khang",
+    cccd: "0123455678",
+    email: "khang@gmail.com",
+    ngaySinh: "25-05-2004",
+    gioiTinh: "Nam"
+  },
+  {
+    tenThiSinh: "Nguyễn Dương Trọng Tín",
+    cccd: "0987654321",
+    email: "tinh@gmail.com",
+    ngaySinh: "25-05-2004",
+    gioiTinh: "Nam"
+  },
+  {
+    tenThiSinh: "Phạm Anh Ngữ",
+    cccd: "0123455678",
+    email: "ngu@gmail.com",
+    ngaySinh: "25-05-2004",
+    gioiTinh: "Nam"
+  },
+  {
+    tenThiSinh: "Nguyễn Khánh Duy",
+    cccd: "0123455678",
+    email: "duy@gmail.com",
+    ngaySinh: "25-05-2004",
+    gioiTinh: "Nam"
+  }, {
     tenThiSinh: "Quách Thiếu Khang",
     cccd: "0123455678",
     email: "khang@gmail.com",
@@ -58,11 +85,12 @@ function Student() {
           borderRadius: "4px",
         }}>Thêm</Button>
 
-        <div>
+        <div className="flex gap-2">
           <Input placeholder="Tìm kiếm tên ngành..." style={{
             width: "300px",
             marginLeft: "10px"
           }} />
+          <Button className="bg-sky-500 hover:bg-sky-400" ><IoSearchSharp /></Button>
         </div>
 
       </div>

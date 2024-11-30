@@ -11,8 +11,37 @@ import {
 } from "@/components/ui/table";
 import { Input } from "@/components/ui/input";
 import Actions from "@/components/Actions/actions";
-
+import { Badge } from "@/components/ui/badge"
+import { IoSearchSharp } from "react-icons/io5";
 const invoices = [
+  {
+    nguyenVong: "000001",
+    nganh: "Thợ điện",
+    tenThiSinh: "Quách Thiếu Khang",
+    cccd: "0123455678",
+    trangThai: "pass"
+  },
+  {
+    nguyenVong: "000002",
+    nganh: "Nuôi cá",
+    tenThiSinh: "Nguyễn Dương Trọng Tín",
+    cccd: "0987654321",
+    trangThai: "pass"
+  },
+  {
+    nguyenVong: "000003",
+    nganh: "Quản lý nuôi tôm",
+    tenThiSinh: "Phạm Anh Ngữ",
+    cccd: "0123455678",
+    trangThai: "pass"
+  },
+  {
+    nguyenVong: "000004",
+    nganh: "Quản lý đất đai",
+    tenThiSinh: "Nguyễn Khánh Duy",
+    cccd: "0123455678",
+    trangThai: "fail"
+  },
   {
     nguyenVong: "000001",
     nganh: "Thợ điện",
@@ -87,17 +116,17 @@ function Result() {
               <TableCell>{item.tenThiSinh}</TableCell>
               <TableCell>{item.cccd}</TableCell>
               <TableCell>{item.trangThai === "pass" ? (
-                <Button style={{
+                <Badge style={{
                   backgroundColor: "green",
                   color: "white",
                   borderRadius: "4px",
-                }}>Đậu</Button>
+                }}>Đậu</Badge>
               ) : (
-                <Button style={{
+                <Badge style={{
                   backgroundColor: "red",
                   color: "white",
                   borderRadius: "4px",
-                }}>Trượt</Button>
+                }}>Trượt</Badge>
               )}</TableCell>
               <TableCell>
                 <Actions />

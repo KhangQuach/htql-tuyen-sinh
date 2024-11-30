@@ -1,5 +1,4 @@
 'use client'
-import { Button } from "@/components/ui/button";
 import {
   Table,
   TableBody,
@@ -8,10 +7,36 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Actions from "@/components/Actions/actions";
-
+import { Badge } from "@/components/ui/badge";
+import { IoSearchSharp } from "react-icons/io5";
 const invoices = [
+  {
+    email: "khang@gmail.com",
+    name: "Quách Thiếu Khang",
+    gioiTinh: "Nam",
+    trangThai: "active"
+  },
+  {
+    email: "tinh@gmail.com",
+    name: "Nguyễn Dương Trọng Tín",
+    gioiTinh: "Nam",
+    trangThai: "active"
+  },
+  {
+    email: "ngu@gmail.com",
+    name: "Phạm Anh Ngữ",
+    gioiTinh: "Nam",
+    trangThai: "active"
+  },
+  {
+    email: "duy@gmail.com",
+    name: "Nguyễn Khánh Duy",
+    gioiTinh: "Nữ",
+    trangThai: "inactive"
+  },
   {
     email: "khang@gmail.com",
     name: "Quách Thiếu Khang",
@@ -54,11 +79,12 @@ function Account() {
           borderRadius: "4px",
         }}>Thêm</Button>
 
-        <div>
+        <div className="flex gap-2">
           <Input placeholder="Tìm kiếm tên ngành..." style={{
             width: "300px",
             marginLeft: "10px"
           }} />
+          <Button className="bg-sky-500 hover:bg-sky-400" ><IoSearchSharp/></Button>
         </div>
 
       </div>
@@ -80,17 +106,17 @@ function Account() {
               <TableCell>{item.name}</TableCell>
               <TableCell>{item.gioiTinh}</TableCell>
               <TableCell>{item.trangThai === "active" ? (
-                <Button style={{
+                <Badge style={{
                   backgroundColor: "green",
                   color: "white",
                   borderRadius: "4px",
-                }}>Hoạt động</Button>
+                }}>Hoạt động</Badge>
               ) : (
-                <Button style={{
+                <Badge style={{
                   backgroundColor: "red",
                   color: "white",
                   borderRadius: "4px",
-                }}>Ngưng</Button>
+                }}>Ngưng</Badge>
               )}</TableCell>
               <TableCell>
                 <Actions />
